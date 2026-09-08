@@ -114,6 +114,7 @@
   .pv-hero h1{font-size:clamp(30px,4.6vw,54px);font-weight:800;line-height:1.06;margin-bottom:18px;letter-spacing:-.035em}
   .pv-hero .h-sub{font-size:16.5px;line-height:1.6;color:rgba(255,255,255,.9);max-width:44ch;margin-bottom:26px}
   .pv-hero .h-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px}
+  .btxt-short{display:none}
   .pv-hero .h-kick{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:5px 14px;border-radius:999px;margin-bottom:16px}
   .pv-hero h1{text-wrap:balance}
   .pv-hero h1 em{font-style:normal;color:#ffe08a;white-space:nowrap}
@@ -376,6 +377,12 @@
     .wrap{padding:0 18px}
     .pv-hero{padding-top:18px;padding-bottom:80px}
     .pv-hero h1{font-size:27px}
+    .pv-hero .h-cta{flex-wrap:nowrap;gap:9px}
+    .pv-hero .h-cta .btn{flex:1;min-width:0;padding:12px 6px;font-size:13.5px;gap:6px}
+    .pv-hero .h-cta .btn svg{width:15px;height:15px;flex:none}
+    .sup-acts{flex-wrap:nowrap;gap:9px}
+    .sup-acts .btn{flex:1;min-width:0;padding:12px 6px;font-size:13.5px}
+    .btxt-full{display:none}.btxt-short{display:inline;white-space:nowrap}
     .pv-hero .h-sub{font-size:15px}
     .pv-tammi{gap:12px}
     .pv-tammi img{width:150px}
@@ -458,8 +465,8 @@
       <h1>Cửa hàng Viettel <em>gần bạn</em> tại Hà Nội</h1>
       <p class="h-sub">Xem toàn bộ <b>14 cửa hàng trực tiếp</b> đang mở tại Hà Nội, lọc theo quận/huyện để tìm điểm gần nhà nhất. Nhiều việc bạn có thể xử lý ngay tại đây mà không cần tới quầy.</p>
       <div class="h-cta">
-        <a class="btn btn-white" href="#stores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Xem cửa hàng theo quận</a>
-        <a class="btn btn-outline-w" href="#mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/></svg>Làm online, khỏi tới quầy</a>
+        <a class="btn btn-white" href="#stores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="btxt-full">Xem cửa hàng theo quận</span><span class="btxt-short">Xem cửa hàng</span></a>
+        <a class="btn btn-outline-w" href="#mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/></svg><span class="btxt-full">Làm online, khỏi tới quầy</span><span class="btxt-short">Làm online</span></a>
       </div>
     </div>
     <div class="pv-tammi">
@@ -774,8 +781,8 @@
       <p>Vui lòng liên hệ chăm sóc khách hàng Viettel Hà Nội để được tư vấn miễn phí về gói cước, Internet và dịch vụ doanh nghiệp.</p>
       <a class="sup-tel" href="tel:02463251080"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0246 325 1080</a>
       <div class="sup-acts">
-        <a class="btn btn-white" href="#stores">Tìm cửa hàng gần bạn</a>
-        <a class="btn btn-outline-w" href="https://www.facebook.com/messages/t/Vietteltelecom" target="_blank" rel="noopener">Chat với CSKH</a>
+        <a class="btn btn-white" href="#stores"><span class="btxt-full">Tìm cửa hàng gần bạn</span><span class="btxt-short">Tìm cửa hàng</span></a>
+        <a class="btn btn-outline-w" href="https://www.facebook.com/messages/t/Vietteltelecom" target="_blank" rel="noopener"><span class="btxt-full">Chat với CSKH</span><span class="btxt-short">Chat CSKH</span></a>
       </div>
     </div>
     <div class="sup-media reveal d1"><img src="assets/store-2.png" alt="Nhân viên Viettel hỗ trợ khách hàng" loading="lazy"></div>
