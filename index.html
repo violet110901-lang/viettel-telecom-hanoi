@@ -194,6 +194,7 @@
   .vmore:hover svg{transform:translateX(3px)}
   .pane{display:none}.pane.on{display:block}
   .vh-tam{height:64px;width:auto;flex:none;margin:-8px 4px -8px 0;filter:drop-shadow(0 8px 12px rgba(0,0,0,.14));animation:tFloat 3.2s ease-in-out infinite}
+  .vh-tam.only-mb{display:none}
 
   /* ============ TIN TỨC KHUYẾN MẠI ============ */
   .news-grid{display:grid;grid-template-columns:1.12fr 1fr;gap:24px;align-items:start}
@@ -369,6 +370,7 @@
     .ev-grid,.sme-grid{grid-template-columns:1fr 1fr}
     .pk-wrap,.pk-wrap.rev{grid-template-columns:1fr}
     .pk-illus{display:none}
+    .vh-tam.only-mb{display:block}
     .vt-foot-cols{grid-template-columns:1fr 1fr}
     .vt-intro{flex-direction:column;gap:14px}
     .sup-media{order:-1}
@@ -530,7 +532,7 @@
 <section class="sec" id="mobile">
   <div class="wrap">
     <div class="vhead reveal">
-      <h2>Dịch vụ di động</h2>
+      <img class="vh-tam only-mb" src="assets/tammi/phone.png" alt="Tammi" loading="lazy"><h2>Dịch vụ di động</h2>
       <div class="vtabs" data-group="mb">
         <button class="on" data-pane="mb-data">Gói Data</button>
         <button data-pane="mb-vas">Dịch vụ GTGT</button>
@@ -584,7 +586,7 @@
 <section class="sec alt" id="internet">
   <div class="wrap">
     <div class="vhead reveal">
-      <h2>Internet - Truyền hình</h2>
+      <img class="vh-tam only-mb" src="assets/tammi/laptop.png" alt="Tammi" loading="lazy"><h2>Internet - Truyền hình</h2>
       <div class="vtabs" data-group="it">
         <button class="on" data-pane="it-net">Internet</button>
         <button data-pane="it-tv">Truyền hình</button>
@@ -638,7 +640,7 @@
 <section class="sec" id="sme">
   <div class="wrap">
     <div class="vhead reveal">
-      <h2>SME</h2>
+      <img class="vh-tam only-mb" src="assets/tammi/thumb.png" alt="Tammi" loading="lazy"><h2>SME</h2>
       <div class="vtabs" data-group="sme">
         <button class="on" data-pane="sme-cntt">Giải pháp CNTT</button>
         <button data-pane="sme-vt">Giải pháp Viễn Thông</button>
