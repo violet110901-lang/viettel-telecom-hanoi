@@ -118,10 +118,6 @@
   .pv-hero h1{text-wrap:balance}
   .pv-hero h1 em{font-style:normal;color:#ffe08a;white-space:nowrap}
   .pv-hero .h-sub b{font-weight:700;color:#fff}
-  .h-quick{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
-  .h-quick a{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.26);padding:7px 14px;border-radius:999px;transition:.15s}
-  .h-quick a::before{content:"";width:5px;height:5px;border-radius:50%;background:#ffe08a;flex:none}
-  .h-quick a:hover{background:rgba(255,255,255,.24);transform:translateY(-1px)}
 
   /* Tammi chào mừng ở hero */
   .pv-tammi{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}
@@ -239,6 +235,7 @@
   .pk-illus{text-align:center}
   .pk-illus img{height:230px;width:auto;margin:0 auto;animation:tFloat 3.4s ease-in-out infinite}
   @keyframes tFloat{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-6px) rotate(1.5deg)}}
+  .pk-wrap>div{min-width:0}
   .pk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
   .pk{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;transition:.2s var(--ease)}
   .pk:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--red)}
@@ -252,9 +249,6 @@
   .pk li{font-size:13px;color:var(--ink-2);display:flex;gap:9px;line-height:1.45}
   .pk li svg{width:15px;height:15px;color:var(--red);flex:none;margin-top:3px}
   .pk .btn{width:100%}
-  .pk-dots{display:flex;gap:8px;justify-content:center;margin-top:22px}
-  .pk-dots button{width:8px;height:8px;border-radius:999px;border:none;background:var(--line-2);cursor:pointer;transition:.25s;padding:0}
-  .pk-dots button.on{width:24px;background:var(--red)}
 
   /* ============ SME ============ */
   .sme-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -386,8 +380,6 @@
     .pv-tammi{gap:12px}
     .pv-tammi img{width:132px}
     .pt-bubble{font-size:13px;padding:12px 15px}
-    .h-quick{gap:7px;margin-top:16px}
-    .h-quick a{font-size:12.5px;padding:6px 12px}
     .pv-panel{margin-top:-56px}
     .pv-ident{grid-template-columns:1fr;padding:20px}
     .pv-find{grid-template-columns:1fr;padding:18px 20px}
@@ -469,16 +461,10 @@
         <a class="btn btn-white" href="#stores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Xem cửa hàng theo quận</a>
         <a class="btn btn-outline-w" href="#mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/></svg>Làm online, khỏi tới quầy</a>
       </div>
-      <ul class="h-quick">
-        <li><a href="#mobile">Đăng ký gói cước</a></li>
-        <li><a href="#mobile">Đổi eSIM 5G</a></li>
-        <li><a href="#internet">Lắp Internet – TV360</a></li>
-        <li><a href="#sme">Giải pháp doanh nghiệp</a></li>
-      </ul>
     </div>
     <div class="pv-tammi">
       <div class="pt-bubble">Chào bạn 👋 Mình là <b>Tammi</b> — trợ lý của Viettel Hà Nội.<br>Bạn đang ở quận nào để mình chỉ cửa hàng gần nhất nhé?</div>
-      <img src="assets/tammi/hello.png" alt="Tammi — trợ lý Viettel Hà Nội">
+      <img src="assets/tammi/main.png" alt="Tammi — trợ lý Viettel Hà Nội">
     </div>
   </div>
 </section>
@@ -555,7 +541,6 @@
             <article class="pk"><div class="pk-h"><div class="nm">MI7D</div><div class="sp">Gói 7 ngày</div></div><div class="pk-b"><div class="price">7.000<small>đ</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>7.000đ có 700MB tốc độ cao</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Chu kỳ 7 ngày, gia hạn tự động</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Áp dụng cho thuê bao trả trước</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/di-dong/goi-data-1/" target="_blank" rel="noopener">Đăng ký</a></div></article>
             <article class="pk"><div class="pk-h"><div class="nm">6M10_100M</div><div class="sp">Gói 6 tháng</div></div><div class="pk-b"><div class="price">60.000<small>đ</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>60K cho 180 ngày sử dụng</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>100MB tốc độ cao mỗi tháng</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Phù hợp thuê bao dùng ít data</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/di-dong/goi-data-1/" target="_blank" rel="noopener">Đăng ký</a></div></article>
           </div>
-          <div class="pk-dots"><button class="on" aria-label="Trang 1"></button><button aria-label="Trang 2"></button><button aria-label="Trang 3"></button></div>
         </div>
       </div>
     </div>
@@ -569,7 +554,6 @@
             <article class="pk"><div class="pk-h"><div class="nm">iMuzik</div><div class="sp">Nhạc chờ</div></div><div class="pk-b"><div class="price">9.000<small>đ/tháng</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Kho nhạc chờ bản quyền hàng chục nghìn bài</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Cài đặt nhanh trên My Viettel</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Miễn phí đổi bài không giới hạn</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/ung-dung-so/imuzik/QXJ0aWNs15e070b96a8c35" target="_blank" rel="noopener">Đăng ký</a></div></article>
             <article class="pk"><div class="pk-h"><div class="nm">Viettel Money</div><div class="sp">Tài khoản số</div></div><div class="pk-b"><div class="price">Miễn phí</div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Thanh toán cước, nạp tiền, chuyển khoản</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mở tài khoản ngay tại cửa hàng</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Hoạt động cả khi không có Internet</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/pay" target="_blank" rel="noopener">Đăng ký</a></div></article>
           </div>
-          <div class="pk-dots"><button class="on" aria-label="Trang 1"></button><button aria-label="Trang 2"></button></div>
         </div>
       </div>
     </div>
@@ -583,7 +567,6 @@
             <article class="pk"><div class="pk-h"><div class="nm">eSIM 5G</div><div class="sp">Không cần sim vật lý</div></div><div class="pk-b"><div class="price">Miễn phí đổi</div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Kích hoạt bằng mã QR trong 5 phút</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Giữ nguyên số thuê bao đang dùng</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mang CCCD gắn chip tới cửa hàng</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/doi-sim" target="_blank" rel="noopener">Đổi eSIM</a></div></article>
             <article class="pk"><div class="pk-h"><div class="nm">MNP</div><div class="sp">Chuyển mạng giữ số</div></div><div class="pk-b"><div class="price">50.000<small>đ</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Trả trước 50.000đ, trả sau 60.000đ</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Xử lý trong 2–5 ngày làm việc</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Thuê bao 2 chiều, không nợ cước</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/chuyenmanggiuso" target="_blank" rel="noopener">Đăng ký</a></div></article>
           </div>
-          <div class="pk-dots"><button class="on" aria-label="Trang 1"></button><button aria-label="Trang 2"></button></div>
         </div>
       </div>
     </div>
@@ -611,7 +594,6 @@
             <article class="pk"><div class="pk-h"><div class="nm">NETVT2_T</div><div class="sp">Từ 500 Mbps</div></div><div class="pk-b"><div class="price">240.000<small>đ/tháng</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Đóng theo chu kỳ 1 tháng / 6 tháng / 13 tháng</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Tối ưu cho học online, làm việc từ xa</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Tặng 6 tháng TV360 khi đóng trước 12 tháng</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/internet-truyenhinh/toan-trinh/" target="_blank" rel="noopener">Đăng ký</a></div></article>
             <article class="pk"><div class="pk-h"><div class="nm">MESHVT1_T</div><div class="sp">300 Mbps · Mesh</div></div><div class="pk-b"><div class="price">210.000<small>đ/tháng</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Đóng theo chu kỳ 1 tháng / 6 tháng / 13 tháng</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Kèm bộ phát Mesh phủ sóng nhà nhiều tầng</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Kỹ thuật khảo sát miễn phí tại Hà Nội</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/internet-truyenhinh/toan-trinh/" target="_blank" rel="noopener">Đăng ký</a></div></article>
           </div>
-          <div class="pk-dots"><button class="on" aria-label="Trang 1"></button><button aria-label="Trang 2"></button><button aria-label="Trang 3"></button><button aria-label="Trang 4"></button></div>
         </div>
         <div class="pk-illus"><img src="assets/tammi/laptop.png" alt="Tammi giới thiệu Internet" loading="lazy"></div>
       </div>
@@ -625,7 +607,6 @@
             <article class="pk"><div class="pk-h"><div class="nm">TV360 Thể thao</div><div class="sp">Bản quyền bóng đá</div></div><div class="pk-b"><div class="price">70.000<small>đ/tháng</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Trọn bộ giải bóng đá trong nước &amp; quốc tế</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Bình luận tiếng Việt, xem đa góc máy</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>4 thiết bị cùng lúc</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/internet-truyenhinh/truyen-hinh" target="_blank" rel="noopener">Đăng ký</a></div></article>
             <article class="pk"><div class="pk-h"><div class="nm">Box TV360</div><div class="sp">Thiết bị đầu thu</div></div><div class="pk-b"><div class="price">990.000<small>đ</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Biến TV thường thành Smart TV</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Điều khiển giọng nói tiếng Việt</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Bảo hành 12 tháng tại cửa hàng</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/thiet-bi" target="_blank" rel="noopener">Đăng ký</a></div></article>
           </div>
-          <div class="pk-dots"><button class="on" aria-label="Trang 1"></button><button aria-label="Trang 2"></button></div>
         </div>
         <div class="pk-illus"><img src="assets/tammi/celebrate.png" alt="Tammi giới thiệu truyền hình" loading="lazy"></div>
       </div>
@@ -639,7 +620,6 @@
             <article class="pk"><div class="pk-h"><div class="nm">Combo Family</div><div class="sp">500 Mbps + TV360</div></div><div class="pk-b"><div class="price">290.000<small>đ/tháng</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Internet 500 Mbps + gói TV360 thể thao</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Tặng 1 bộ mở rộng sóng Wi-Fi</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Ưu đãi thêm khi đóng trước 12 tháng</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/internet-truyenhinh/combo" target="_blank" rel="noopener">Đăng ký</a></div></article>
             <article class="pk"><div class="pk-h"><div class="nm">Combo Camera</div><div class="sp">Internet + Camera</div></div><div class="pk-b"><div class="price">260.000<small>đ/tháng</small></div><ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Internet 300 Mbps kèm 1 camera Cloud</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lưu trữ đám mây 7 ngày</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Xem trực tiếp trên app Viettel Home</li></ul><a class="btn btn-primary" href="https://vietteltelecom.vn/vx/internet-truyenhinh/camera" target="_blank" rel="noopener">Đăng ký</a></div></article>
           </div>
-          <div class="pk-dots"><button class="on" aria-label="Trang 1"></button><button aria-label="Trang 2"></button></div>
         </div>
         <div class="pk-illus"><img src="assets/tammi/heart.png" alt="Tammi giới thiệu combo" loading="lazy"></div>
       </div>
@@ -677,7 +657,7 @@
     </div>
 
     <div class="pane" id="sme-iot">
-      <div class="pk-wrap reveal show"><div class="pk-illus"><img src="assets/tammi/main.png" alt="Tammi giới thiệu giải pháp IoT" loading="lazy"></div><div><div class="sme-grid">
+      <div class="pk-wrap reveal show"><div class="pk-illus"><img src="assets/tammi/run.png" alt="Tammi giới thiệu giải pháp IoT" loading="lazy"></div><div><div class="sme-grid">
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/iot" target="_blank" rel="noopener"><img src="assets/store-4.png" alt="Camera an ninh" loading="lazy"><div class="ov"><div class="kk">Giám sát</div><h4>Camera Cloud doanh nghiệp</h4><p>Quản lý nhiều chi nhánh trên một ứng dụng, lưu trữ đám mây, cảnh báo AI.</p></div></a>
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/iot" target="_blank" rel="noopener"><img src="assets/store-1.png" alt="Giám sát hành trình" loading="lazy"><div class="ov"><div class="kk">Vận tải</div><h4>Giám sát hành trình</h4><p>Định vị phương tiện, báo cáo hành trình đúng quy định Bộ GTVT.</p></div></a>
         <a class="sme" href="https://sme.viettel.vn/landing-page?alias=TDO" target="_blank" rel="noopener"><img src="assets/ban-tradein.jpg" alt="Quản lý bán hàng" loading="lazy"><div class="ov"><div class="kk">Bán hàng</div><h4>Giải pháp quản lý bán hàng</h4><p>Quản lý kho, đơn hàng, công nợ cho hộ kinh doanh và chuỗi cửa hàng.</p></div></a>
@@ -967,14 +947,6 @@ document.querySelectorAll('.vtabs').forEach(function(g){
   });
 });
 
-/* ===== dots (chỉ đổi trạng thái hiển thị) ===== */
-document.querySelectorAll('.pk-dots').forEach(function(g){
-  g.addEventListener('click', function(e){
-    var b = e.target.closest('button'); if(!b) return;
-    g.querySelectorAll('button').forEach(function(x){ x.classList.remove('on'); });
-    b.classList.add('on');
-  });
-});
 
 /* ===== Tammi ===== */
 function toggleTammi(){ document.getElementById('tammiPanel').classList.toggle('open'); }
