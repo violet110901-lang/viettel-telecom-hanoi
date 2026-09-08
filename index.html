@@ -6,12 +6,12 @@
 <meta name="robots" content="noindex, nofollow" />
 <meta name="googlebot" content="noindex, nofollow" />
 <title>Viettel Hà Nội - Chi nhánh Viettel Telecom tại Hà Nội | Cửa hàng, gói cước, Internet</title>
-<meta name="description" content="Viettel Hà Nội — Trụ sở Tòa nhà The Light, Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội. Hotline 02463251080. Tìm cửa hàng Viettel theo quận/huyện, gói cước di động, Internet - Truyền hình và giải pháp doanh nghiệp." />
+<meta name="description" content="Viettel Hà Nội — Trụ sở Tòa nhà The Light, Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội. Hotline 0246 325 1080. Tìm cửa hàng Viettel theo quận/huyện, gói cước di động, Internet - Truyền hình và giải pháp doanh nghiệp." />
 <link rel="canonical" href="https://violet110901-lang.github.io/viettel-telecom-hanoi/" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://violet110901-lang.github.io/viettel-telecom-hanoi/" />
 <meta property="og:title" content="Viettel Hà Nội - Chi nhánh Viettel Telecom tại Hà Nội" />
-<meta property="og:description" content="Trụ sở Tòa nhà The Light, Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội · Hotline 02463251080 · Tìm cửa hàng Viettel theo quận/huyện." />
+<meta property="og:description" content="Trụ sở Tòa nhà The Light, Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội · Hotline 0246 325 1080 · Tìm cửa hàng Viettel theo quận/huyện." />
 <meta property="og:image" content="https://violet110901-lang.github.io/viettel-telecom-hanoi/assets/store-2.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://violet110901-lang.github.io/viettel-telecom-hanoi/assets/store-2.png" />
@@ -114,12 +114,21 @@
   .pv-hero h1{font-size:clamp(30px,4.6vw,54px);font-weight:800;line-height:1.06;margin-bottom:18px;letter-spacing:-.035em}
   .pv-hero .h-sub{font-size:16.5px;line-height:1.6;color:rgba(255,255,255,.9);max-width:44ch;margin-bottom:26px}
   .pv-hero .h-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:8px}
-  .pv-collage{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end}
-  .pv-collage figure{border-radius:26px;overflow:hidden;border:4px solid rgba(255,255,255,.22);box-shadow:0 26px 60px rgba(60,0,12,.38);background:rgba(255,255,255,.1)}
-  .pv-collage figure img{width:100%;height:100%;object-fit:cover;display:block}
-  .pv-collage figure:nth-child(1){aspect-ratio:3/4.4;transform:translateY(-14px)}
-  .pv-collage figure:nth-child(2){aspect-ratio:3/5.2}
-  .pv-collage figure:nth-child(3){aspect-ratio:3/4.4;transform:translateY(-26px)}
+  .pv-hero .h-kick{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:5px 14px;border-radius:999px;margin-bottom:16px}
+  .pv-hero h1{text-wrap:balance}
+  .pv-hero h1 em{font-style:normal;color:#ffe08a;white-space:nowrap}
+  .pv-hero .h-sub b{font-weight:700;color:#fff}
+  .h-quick{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .h-quick a{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:500;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.26);padding:7px 14px;border-radius:999px;transition:.15s}
+  .h-quick a::before{content:"";width:5px;height:5px;border-radius:50%;background:#ffe08a;flex:none}
+  .h-quick a:hover{background:rgba(255,255,255,.24);transform:translateY(-1px)}
+
+  /* Tammi chào mừng ở hero */
+  .pv-tammi{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .pv-tammi img{width:min(340px,80%);height:auto;filter:drop-shadow(0 26px 40px rgba(60,0,12,.42));animation:tFloat 3.6s ease-in-out infinite}
+  .pt-bubble{position:relative;background:#fff;color:var(--ink-2);border-radius:20px;border-bottom-left-radius:5px;padding:15px 20px;font-size:14px;line-height:1.5;box-shadow:var(--shadow-lg);max-width:330px;margin-bottom:6px;align-self:flex-start}
+  .pt-bubble b{color:var(--red);font-weight:700}
+  .pt-bubble::after{content:"";position:absolute;left:22px;bottom:-9px;width:0;height:0;border:10px solid transparent;border-top-color:#fff;border-bottom:0}
 
   /* Info card + store finder (đè lên hero) */
   .pv-panel{position:relative;z-index:5;margin-top:-70px}
@@ -132,6 +141,8 @@
   .pv-info .ic svg{width:17px;height:17px;color:var(--red)}
   .pv-info .k{font-size:12px;font-weight:600;color:var(--muted);margin-bottom:2px}
   .pv-info .v{font-size:14.5px;font-weight:600;color:var(--ink);line-height:1.45}
+  .pv-info .k2{font-size:11.5px;color:var(--muted);margin-top:3px}
+  .pv-info .k2 a{font-weight:600;color:var(--red)}
   .pv-info a.v:hover{color:var(--red)}
   .pv-find{display:grid;grid-template-columns:minmax(180px,auto) 1fr 1fr auto;gap:16px;align-items:center;padding:20px 30px;background:var(--bg-soft)}
   .pv-find .fl{font-size:16px;font-weight:700;color:var(--ink)}
@@ -185,6 +196,7 @@
   .vmore svg{width:14px;height:14px;transition:.15s}
   .vmore:hover svg{transform:translateX(3px)}
   .pane{display:none}.pane.on{display:block}
+  .vh-tam{height:64px;width:auto;flex:none;margin:-8px 4px -8px 0;filter:drop-shadow(0 8px 12px rgba(0,0,0,.14));animation:tFloat 3.2s ease-in-out infinite}
 
   /* ============ TIN TỨC KHUYẾN MẠI ============ */
   .news-grid{display:grid;grid-template-columns:1.12fr 1fr;gap:24px;align-items:start}
@@ -282,6 +294,7 @@
   .vt-intro-logo{height:46px;width:auto;flex:none}
   .vt-intro-title{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px}
   .vt-intro-desc{font-size:12.5px;color:var(--muted);line-height:1.6}
+  .vt-intro-desc+.vt-intro-desc{margin-top:6px}
   .vt-foot-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;padding:30px 0}
   .vt-foot-cols h5{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:14px}
   .vt-foot-cols h5.mt{margin-top:24px}
@@ -296,6 +309,30 @@
   .vt-social svg{width:19px;height:19px}
   .vt-copy{font-size:13px;color:var(--muted)}
 
+  /* ============ TAMMI nổi (góc dưới phải) ============ */
+  .tammi-fab{position:fixed;right:20px;bottom:20px;z-index:70;display:flex;align-items:center;gap:12px}
+  .tammi-fab .say{background:#fff;border:1px solid var(--line);box-shadow:var(--shadow-lg);border-radius:16px;border-bottom-right-radius:4px;padding:11px 15px;font-size:13.5px;font-weight:500;color:var(--ink);max-width:180px}
+  .tammi-fab .say b{color:var(--red)}
+  .tammi-fab .btn-t{width:98px;height:98px;border-radius:50%;background:radial-gradient(circle at 50% 35%,#fff,#ffe4ea);border:none;cursor:pointer;box-shadow:var(--shadow-lg);padding:8px;transition:.2s var(--ease);position:relative;animation:tFloat 3.4s ease-in-out infinite}
+  .tammi-fab .btn-t:hover{transform:scale(1.07)}
+  .tammi-fab .btn-t img{width:100%;height:100%;object-fit:contain}
+  .tammi-fab .btn-t .dot{position:absolute;top:8px;right:8px;width:13px;height:13px;background:#16a34a;border:2px solid #fff;border-radius:50%}
+  @keyframes tpop{from{opacity:0;transform:translateY(8px) scale(.95)}to{opacity:1;transform:none}}
+  .tammi-panel{position:fixed;right:20px;bottom:96px;z-index:71;width:336px;max-width:calc(100vw - 40px);background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-lg);overflow:hidden;display:none}
+  .tammi-panel.open{display:block;animation:tpop .28s var(--ease)}
+  .tp-head{background:var(--bg-dark);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:12px}
+  .tp-head .ava{width:44px;height:44px;flex:none;object-fit:contain}
+  .tp-head h4{font-size:15px}
+  .tp-head small{color:#16a34a;font-size:12px;display:flex;align-items:center;gap:5px}
+  .tp-head small i{width:7px;height:7px;background:#16a34a;border-radius:50%;font-style:normal}
+  .tp-head .x{margin-left:auto;background:none;border:none;color:#9a9aa6;font-size:22px;cursor:pointer;line-height:1}
+  .tp-body{padding:16px 18px;max-height:330px;overflow:auto}
+  .tp-msg{background:var(--bg-soft);border-radius:14px;border-top-left-radius:4px;padding:12px 14px;font-size:13.5px;color:var(--ink-2);margin-bottom:12px;line-height:1.55}
+  .tp-msg b{color:var(--red)}
+  .tp-quick{display:flex;flex-direction:column;gap:8px}
+  .tp-quick button{text-align:left;font-family:inherit;font-size:13.5px;font-weight:500;padding:11px 14px;border:1px solid var(--line-2);border-radius:11px;background:#fff;cursor:pointer;transition:.15s;color:var(--ink)}
+  .tp-quick button:hover{border-color:var(--red);color:var(--red)}
+
   /* ============ RAIL phải (quick action) ============ */
   .rail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:65;display:flex;flex-direction:column;gap:10px}
   .rail a{width:82px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow-lg);padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center;transition:.18s var(--ease)}
@@ -308,6 +345,7 @@
 
   /* ============ RESPONSIVE ============ */
   @media(max-width:1240px){.rail{display:none}}
+  @media(max-width:820px){.tammi-fab .say{display:none}}
   @media(max-width:1080px){
     .vt-item>a{padding:0 9px;font-size:14px}
     .vt-nav{gap:4px}
@@ -322,7 +360,10 @@
     .vt-menu-mb a{padding:14px 6px;font-size:15px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line)}
     .vt-menu-mb a:last-child{border-bottom:none}
     .pv-hero-grid{grid-template-columns:1fr;gap:26px}
-    .pv-collage{max-width:520px}
+    .pv-tammi{flex-direction:row;align-items:center;justify-content:flex-start;gap:16px}
+    .pv-tammi img{width:210px;order:-1}
+    .pt-bubble{margin-bottom:0;border-radius:20px;border-bottom-left-radius:5px;align-self:center;max-width:none;flex:1}
+    .pt-bubble::after{display:none}
     .pv-find{grid-template-columns:1fr 1fr;gap:12px}
     .pv-find .fl{grid-column:1/-1}
     .pv-find .btn{grid-column:1/-1}
@@ -342,16 +383,19 @@
     .pv-hero{padding-top:18px;padding-bottom:80px}
     .pv-hero h1{font-size:27px}
     .pv-hero .h-sub{font-size:15px}
-    .pv-collage{gap:9px}
-    .pv-collage figure{border-radius:18px;border-width:3px}
-    .pv-collage figure:nth-child(1),.pv-collage figure:nth-child(3){transform:none}
+    .pv-tammi{gap:12px}
+    .pv-tammi img{width:132px}
+    .pt-bubble{font-size:13px;padding:12px 15px}
+    .h-quick{gap:7px;margin-top:16px}
+    .h-quick a{font-size:12.5px;padding:6px 12px}
     .pv-panel{margin-top:-56px}
     .pv-ident{grid-template-columns:1fr;padding:20px}
     .pv-find{grid-template-columns:1fr;padding:18px 20px}
     .pv-result{padding:20px}
     .sec{padding:46px 0}
     .vhead{gap:12px;margin-bottom:20px}
-    .vhead h2{font-size:21px;width:100%}
+    .vhead h2{font-size:21px}
+    .vh-tam{height:46px;margin:-6px 2px -6px 0}
     .vtabs{width:100%;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
     .vtabs button{margin-right:14px;white-space:nowrap;font-size:13.5px}
     .vmore{margin-left:0}
@@ -367,6 +411,9 @@
     .mbar{display:flex;padding:9px 12px;gap:8px}
     .mbar .btn{padding:11px 4px;font-size:12.5px}
     body{padding-bottom:64px}
+    .tammi-fab{bottom:76px;right:12px}
+    .tammi-fab .btn-t{width:66px;height:66px}
+    .tammi-panel{bottom:150px;right:12px}
   }
 </style>
 </head>
@@ -415,17 +462,23 @@
   </div>
   <div class="wrap pv-hero-grid">
     <div>
-      <h1>Đột phá, thành công</h1>
-      <p class="h-sub">Viettel Hà Nội đặt mục tiêu trở thành doanh nghiệp viễn thông đa dịch vụ số 1 trên địa bàn Thủ đô.</p>
+      <span class="h-kick">Danh bạ cửa hàng · Hà Nội</span>
+      <h1>Cửa hàng Viettel <em>gần bạn</em> tại Hà Nội</h1>
+      <p class="h-sub">Xem toàn bộ <b>14 cửa hàng trực tiếp</b> đang mở tại Hà Nội, lọc theo quận/huyện để tìm điểm gần nhà nhất. Nhiều việc bạn có thể xử lý ngay tại đây mà không cần tới quầy.</p>
       <div class="h-cta">
-        <a class="btn btn-white" href="#stores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Tìm cửa hàng gần bạn</a>
-        <a class="btn btn-outline-w" href="tel:02463251080"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0246 325 1080</a>
+        <a class="btn btn-white" href="#stores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Xem cửa hàng theo quận</a>
+        <a class="btn btn-outline-w" href="#mobile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/></svg>Làm online, khỏi tới quầy</a>
       </div>
+      <ul class="h-quick">
+        <li><a href="#mobile">Đăng ký gói cước</a></li>
+        <li><a href="#mobile">Đổi eSIM 5G</a></li>
+        <li><a href="#internet">Lắp Internet – TV360</a></li>
+        <li><a href="#sme">Giải pháp doanh nghiệp</a></li>
+      </ul>
     </div>
-    <div class="pv-collage">
-      <figure><img src="assets/store-1.png" alt="Quầy giao dịch Viettel tại Hà Nội" loading="lazy"></figure>
-      <figure><img src="assets/store-2.png" alt="Cửa hàng Viettel Telecom tại Hà Nội" loading="lazy"></figure>
-      <figure><img src="assets/store-3.png" alt="Không gian phục vụ khách hàng Viettel Hà Nội" loading="lazy"></figure>
+    <div class="pv-tammi">
+      <div class="pt-bubble">Chào bạn 👋 Mình là <b>Tammi</b> — trợ lý của Viettel Hà Nội.<br>Bạn đang ở quận nào để mình chỉ cửa hàng gần nhất nhé?</div>
+      <img src="assets/tammi/hello.png" alt="Tammi — trợ lý Viettel Hà Nội">
     </div>
   </div>
 </section>
@@ -442,7 +495,7 @@
         </div>
         <div class="pv-info">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-          <div><div class="k">Số điện thoại</div><a class="v" href="tel:02463251080">02463251080</a></div>
+          <div><div class="k">Hotline chi nhánh</div><a class="v" href="tel:02463251080">0246 325 1080</a><div class="k2">CSKH toàn quốc: <a href="tel:198">198</a> (miễn phí)</div></div>
         </div>
       </div>
 
@@ -479,105 +532,6 @@
   </div>
 </section>
 
-<!-- ============ TIN TỨC KHUYẾN MẠI ============ -->
-<section class="sec" id="news">
-  <div class="wrap">
-    <div class="vhead reveal">
-      <h2>Tin tức khuyến mại</h2>
-      <div class="vtabs" data-group="news">
-        <button class="on" data-pane="news-hn">Tin tức khuyến mãi Hà Nội</button>
-        <button data-pane="news-vt">Tin tức Viettel</button>
-      </div>
-      <a class="vmore" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">Xem tất cả <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-
-    <div class="pane on" id="news-hn">
-      <div class="news-grid reveal">
-        <a class="news-lead" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">
-          <div class="th"><img src="assets/ban-money.jpg" alt="Ưu đãi kết nối siêu tốc tại Viettel Hà Nội" loading="lazy"></div>
-          <div class="bd">
-            <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ sáu, 28/03/2025</span></div>
-            <h3>Cơ hội trúng xe máy điện VinFast dành cho khách hàng đăng ký sử dụng dịch vụ của Viettel</h3>
-          </div>
-        </a>
-        <div class="news-side">
-          <a class="nrow" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">
-            <div class="th"><img src="assets/prod-iphone.jpg" alt="Siêu khuyến mại Wifi tận tay" loading="lazy"></div>
-            <div>
-              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ sáu, 01/12/2023</span></div>
-              <h4>Siêu khuyến mại "Wifi tận tay – Nhận ngay quà Tết"</h4>
-            </div>
-          </a>
-          <a class="nrow" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">
-            <div class="th"><img src="assets/ban-tradein.jpg" alt="Tỷ phú data - Rinh iPhone về nhà" loading="lazy"></div>
-            <div>
-              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ sáu, 21/04/2023</span></div>
-              <h4>Cơ hội trúng iPhone 14 Pro Max 128GB khi đăng ký gói thoại, data, combo…</h4>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="pane" id="news-vt">
-      <div class="news-grid reveal show">
-        <a class="news-lead" href="https://vietteltelecom.vn/vx/5g/" target="_blank" rel="noopener">
-          <div class="th"><img src="assets/prod-samsung.jpg" alt="Viettel 5G phủ sóng toàn quốc" loading="lazy"></div>
-          <div class="bd">
-            <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ ba, 15/10/2024</span></div>
-            <h3>Viettel chính thức khai trương mạng 5G — tốc độ vượt trội tại 63 tỉnh thành</h3>
-          </div>
-        </a>
-        <div class="news-side">
-          <a class="nrow" href="https://vietteltelecom.vn/vx/viettelplus/" target="_blank" rel="noopener">
-            <div class="th"><img src="assets/prod-sim.jpg" alt="Viettel++" loading="lazy"></div>
-            <div>
-              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ hai, 08/07/2024</span></div>
-              <h4>Viettel++ nâng hạng hội viên: đổi điểm lấy data, quà tặng mỗi tháng</h4>
-            </div>
-          </a>
-          <a class="nrow" href="https://vietteltelecom.vn/doi-sim" target="_blank" rel="noopener">
-            <div class="th"><img src="assets/prod-simcard.jpg" alt="Đổi SIM eSIM" loading="lazy"></div>
-            <div>
-              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ tư, 22/05/2024</span></div>
-              <h4>Miễn phí đổi SIM 4G/5G và eSIM tại toàn bộ cửa hàng Viettel</h4>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ HOẠT ĐỘNG SỰ KIỆN ============ -->
-<section class="sec alt" id="events">
-  <div class="wrap">
-    <div class="vhead reveal">
-      <h2>Hoạt động sự kiện</h2>
-      <div class="vtabs" data-group="ev">
-        <button class="on" data-pane="ev-act">Hoạt động</button>
-        <button data-pane="ev-evt">Sự kiện</button>
-      </div>
-      <a class="vmore" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">Xem tất cả <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-    </div>
-
-    <div class="pane on" id="ev-act">
-      <div class="ev-grid reveal">
-        <article class="ev"><div class="th"><img src="assets/store-4.png" alt="Chuẩn hoá thông tin thuê bao" loading="lazy"></div><div class="bd"><h4>Chuẩn hoá thông tin thuê bao tại 100% cửa hàng Hà Nội</h4><p>Hỗ trợ khách hàng cập nhật thông tin theo Nghị định 49 ngay tại quầy, xử lý trong 10 phút.</p><a class="go" href="https://vietteltelecom.vn/tra-cuu-thong-tin-thue-bao" target="_blank" rel="noopener">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
-        <article class="ev"><div class="th"><img src="assets/store-3.png" alt="Ngày hội khách hàng Viettel Hà Nội" loading="lazy"></div><div class="bd"><h4>Ngày hội khách hàng Viettel++ khu vực Thủ đô</h4><p>Tri ân hội viên hạng Vàng – Kim cương với ưu đãi data, voucher và quà tặng thiết bị.</p><a class="go" href="https://vietteltelecom.vn/vx/viettelplus/uu-dai" target="_blank" rel="noopener">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
-        <article class="ev"><div class="th"><img src="assets/ban-tradein.jpg" alt="Thu cũ đổi mới" loading="lazy"></div><div class="bd"><h4>Thu cũ đổi mới điện thoại &amp; thiết bị thông minh</h4><p>Định giá máy cũ miễn phí tại cửa hàng, trợ giá lên tới 2 triệu đồng khi lên đời máy mới.</p><a class="go" href="https://vietteltelecom.vn/vx/dien-thoai-thiet-bi" target="_blank" rel="noopener">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
-      </div>
-    </div>
-
-    <div class="pane" id="ev-evt">
-      <div class="ev-grid reveal show">
-        <article class="ev"><div class="th"><img src="assets/store-2.png" alt="Khai trương cửa hàng" loading="lazy"></div><div class="bd"><h4>Khai trương cửa hàng trực tiếp Lê Văn Lương, Thanh Xuân</h4><p>Cửa hàng chuẩn mô hình mới tại tầng 1 toà Star City — mở cửa 08:00–20:00 cả tuần.</p><a class="go" href="https://violet110901-lang.github.io/viettel-le-van-luong-landing/" target="_blank" rel="noopener">Xem cửa hàng <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
-        <article class="ev"><div class="th"><img src="assets/prod-samsung.jpg" alt="Trải nghiệm 5G" loading="lazy"></div><div class="bd"><h4>Tuần lễ trải nghiệm Viettel 5G tại các trung tâm thương mại</h4><p>Đo tốc độ thực tế, trải nghiệm cloud gaming và nhận SIM 5G trải nghiệm miễn phí.</p><a class="go" href="https://vietteltelecom.vn/vx/5g/" target="_blank" rel="noopener">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
-        <article class="ev"><div class="th"><img src="assets/ban-money.jpg" alt="Viettel Money" loading="lazy"></div><div class="bd"><h4>Hội thảo giải pháp số cho doanh nghiệp SME Hà Nội</h4><p>Giới thiệu ViettelCA, SInvoice, vBHXH và lộ trình chuyển đổi số cho hộ kinh doanh.</p><a class="go" href="#sme">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ DỊCH VỤ DI ĐỘNG ============ -->
 <section class="sec" id="mobile">
@@ -707,26 +661,126 @@
     </div>
 
     <div class="pane on" id="sme-cntt">
-      <div class="sme-grid reveal">
+      <div class="pk-wrap reveal"><div class="pk-illus"><img src="assets/tammi/thumb.png" alt="Tammi giới thiệu giải pháp doanh nghiệp" loading="lazy"></div><div><div class="sme-grid">
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/cntt" target="_blank" rel="noopener"><img src="assets/prod-samsung.jpg" alt="ViettelCA" loading="lazy"><div class="ov"><div class="kk">Chữ ký số</div><h4>ViettelCA</h4><p>Chữ ký số cho doanh nghiệp và cá nhân, ký hồ sơ thuế – BHXH – hải quan.</p></div></a>
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/cntt" target="_blank" rel="noopener"><img src="assets/prod-iphone.jpg" alt="SInvoice" loading="lazy"><div class="ov"><div class="kk">Hoá đơn điện tử</div><h4>SInvoice</h4><p>Phát hành, lưu trữ và tra cứu hoá đơn điện tử theo chuẩn Tổng cục Thuế.</p></div></a>
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/cntt" target="_blank" rel="noopener"><img src="assets/ban-money.jpg" alt="vBHXH" loading="lazy"><div class="ov"><div class="kk">Kê khai bảo hiểm</div><h4>vBHXH</h4><p>Giải pháp kê khai bảo hiểm xã hội — tiết kiệm, nhanh chóng, an toàn dữ liệu.</p></div></a>
-      </div>
+      </div></div></div>
     </div>
 
     <div class="pane" id="sme-vt">
-      <div class="sme-grid reveal show">
+      <div class="pk-wrap reveal show"><div class="pk-illus"><img src="assets/tammi/idea.png" alt="Tammi giới thiệu giải pháp viễn thông" loading="lazy"></div><div><div class="sme-grid">
         <a class="sme" href="https://vietteltelecom.vn/vx/internet-doanh-nghiep" target="_blank" rel="noopener"><img src="assets/store-3.png" alt="Internet doanh nghiệp" loading="lazy"><div class="ov"><div class="kk">Kết nối</div><h4>Internet doanh nghiệp</h4><p>Đường truyền riêng, IP tĩnh, cam kết băng thông và SLA khắc phục nhanh.</p></div></a>
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/vien-thong" target="_blank" rel="noopener"><img src="assets/prod-sim.jpg" alt="Tổng đài số" loading="lazy"><div class="ov"><div class="kk">Tổng đài</div><h4>Cloud Contact Center</h4><p>Tổng đài ảo, ghi âm cuộc gọi, phân luồng chăm sóc khách hàng đa kênh.</p></div></a>
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/vien-thong" target="_blank" rel="noopener"><img src="assets/prod-simcard.jpg" alt="SMS Brandname" loading="lazy"><div class="ov"><div class="kk">Thương hiệu</div><h4>SMS Brandname</h4><p>Gửi tin nhắn thương hiệu tới khách hàng, tỉ lệ tới đích cao, có báo cáo.</p></div></a>
-      </div>
+      </div></div></div>
     </div>
 
     <div class="pane" id="sme-iot">
-      <div class="sme-grid reveal show">
+      <div class="pk-wrap reveal show"><div class="pk-illus"><img src="assets/tammi/main.png" alt="Tammi giới thiệu giải pháp IoT" loading="lazy"></div><div><div class="sme-grid">
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/iot" target="_blank" rel="noopener"><img src="assets/store-4.png" alt="Camera an ninh" loading="lazy"><div class="ov"><div class="kk">Giám sát</div><h4>Camera Cloud doanh nghiệp</h4><p>Quản lý nhiều chi nhánh trên một ứng dụng, lưu trữ đám mây, cảnh báo AI.</p></div></a>
         <a class="sme" href="https://vietteltelecom.vn/giai-phap/iot" target="_blank" rel="noopener"><img src="assets/store-1.png" alt="Giám sát hành trình" loading="lazy"><div class="ov"><div class="kk">Vận tải</div><h4>Giám sát hành trình</h4><p>Định vị phương tiện, báo cáo hành trình đúng quy định Bộ GTVT.</p></div></a>
         <a class="sme" href="https://sme.viettel.vn/landing-page?alias=TDO" target="_blank" rel="noopener"><img src="assets/ban-tradein.jpg" alt="Quản lý bán hàng" loading="lazy"><div class="ov"><div class="kk">Bán hàng</div><h4>Giải pháp quản lý bán hàng</h4><p>Quản lý kho, đơn hàng, công nợ cho hộ kinh doanh và chuỗi cửa hàng.</p></div></a>
+      </div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIN TỨC KHUYẾN MẠI ============ -->
+<section class="sec alt" id="news">
+  <div class="wrap">
+    <div class="vhead reveal">
+      <img class="vh-tam" src="assets/tammi/shout.png" alt="Tammi" loading="lazy"><h2>Tin tức khuyến mại</h2>
+      <div class="vtabs" data-group="news">
+        <button class="on" data-pane="news-hn">Tin tức khuyến mãi Hà Nội</button>
+        <button data-pane="news-vt">Tin tức Viettel</button>
+      </div>
+      <a class="vmore" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">Xem tất cả <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="pane on" id="news-hn">
+      <div class="news-grid reveal">
+        <a class="news-lead" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">
+          <div class="th"><img src="assets/ban-money.jpg" alt="Ưu đãi kết nối siêu tốc tại Viettel Hà Nội" loading="lazy"></div>
+          <div class="bd">
+            <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ sáu, 28/03/2025</span></div>
+            <h3>Cơ hội trúng xe máy điện VinFast dành cho khách hàng đăng ký sử dụng dịch vụ của Viettel</h3>
+          </div>
+        </a>
+        <div class="news-side">
+          <a class="nrow" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">
+            <div class="th"><img src="assets/prod-iphone.jpg" alt="Siêu khuyến mại Wifi tận tay" loading="lazy"></div>
+            <div>
+              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ sáu, 01/12/2023</span></div>
+              <h4>Siêu khuyến mại "Wifi tận tay – Nhận ngay quà Tết"</h4>
+            </div>
+          </a>
+          <a class="nrow" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">
+            <div class="th"><img src="assets/ban-tradein.jpg" alt="Tỷ phú data - Rinh iPhone về nhà" loading="lazy"></div>
+            <div>
+              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ sáu, 21/04/2023</span></div>
+              <h4>Cơ hội trúng iPhone 14 Pro Max 128GB khi đăng ký gói thoại, data, combo…</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pane" id="news-vt">
+      <div class="news-grid reveal show">
+        <a class="news-lead" href="https://vietteltelecom.vn/vx/5g/" target="_blank" rel="noopener">
+          <div class="th"><img src="assets/prod-samsung.jpg" alt="Viettel 5G phủ sóng toàn quốc" loading="lazy"></div>
+          <div class="bd">
+            <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ ba, 15/10/2024</span></div>
+            <h3>Viettel chính thức khai trương mạng 5G — tốc độ vượt trội tại 63 tỉnh thành</h3>
+          </div>
+        </a>
+        <div class="news-side">
+          <a class="nrow" href="https://vietteltelecom.vn/vx/viettelplus/" target="_blank" rel="noopener">
+            <div class="th"><img src="assets/prod-sim.jpg" alt="Viettel++" loading="lazy"></div>
+            <div>
+              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ hai, 08/07/2024</span></div>
+              <h4>Viettel++ nâng hạng hội viên: đổi điểm lấy data, quà tặng mỗi tháng</h4>
+            </div>
+          </a>
+          <a class="nrow" href="https://vietteltelecom.vn/doi-sim" target="_blank" rel="noopener">
+            <div class="th"><img src="assets/prod-simcard.jpg" alt="Đổi SIM eSIM" loading="lazy"></div>
+            <div>
+              <div class="nmeta"><span class="tag">Tin tức</span><span class="dt">Thứ tư, 22/05/2024</span></div>
+              <h4>Miễn phí đổi SIM 4G/5G và eSIM tại toàn bộ cửa hàng Viettel</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOẠT ĐỘNG SỰ KIỆN ============ -->
+<section class="sec" id="events">
+  <div class="wrap">
+    <div class="vhead reveal">
+      <img class="vh-tam" src="assets/tammi/celebrate.png" alt="Tammi" loading="lazy"><h2>Hoạt động sự kiện</h2>
+      <div class="vtabs" data-group="ev">
+        <button class="on" data-pane="ev-act">Hoạt động</button>
+        <button data-pane="ev-evt">Sự kiện</button>
+      </div>
+      <a class="vmore" href="https://vietteltelecom.vn/vx/tin-tuc/" target="_blank" rel="noopener">Xem tất cả <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+
+    <div class="pane on" id="ev-act">
+      <div class="ev-grid reveal">
+        <article class="ev"><div class="th"><img src="assets/store-4.png" alt="Chuẩn hoá thông tin thuê bao" loading="lazy"></div><div class="bd"><h4>Chuẩn hoá thông tin thuê bao tại 100% cửa hàng Hà Nội</h4><p>Hỗ trợ khách hàng cập nhật thông tin theo Nghị định 49 ngay tại quầy, xử lý trong 10 phút.</p><a class="go" href="https://vietteltelecom.vn/tra-cuu-thong-tin-thue-bao" target="_blank" rel="noopener">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+        <article class="ev"><div class="th"><img src="assets/store-3.png" alt="Ngày hội khách hàng Viettel Hà Nội" loading="lazy"></div><div class="bd"><h4>Ngày hội khách hàng Viettel++ khu vực Thủ đô</h4><p>Tri ân hội viên hạng Vàng – Kim cương với ưu đãi data, voucher và quà tặng thiết bị.</p><a class="go" href="https://vietteltelecom.vn/vx/viettelplus/uu-dai" target="_blank" rel="noopener">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+        <article class="ev"><div class="th"><img src="assets/ban-tradein.jpg" alt="Thu cũ đổi mới" loading="lazy"></div><div class="bd"><h4>Thu cũ đổi mới điện thoại &amp; thiết bị thông minh</h4><p>Định giá máy cũ miễn phí tại cửa hàng, trợ giá lên tới 2 triệu đồng khi lên đời máy mới.</p><a class="go" href="https://vietteltelecom.vn/vx/dien-thoai-thiet-bi" target="_blank" rel="noopener">Tìm hiểu thêm <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+      </div>
+    </div>
+
+    <div class="pane" id="ev-evt">
+      <div class="ev-grid reveal show">
+        <article class="ev"><div class="th"><img src="assets/store-2.png" alt="Khai trương cửa hàng" loading="lazy"></div><div class="bd"><h4>Khai trương cửa hàng trực tiếp Lê Văn Lương, Thanh Xuân</h4><p>Cửa hàng chuẩn mô hình mới tại tầng 1 toà Star City — mở cửa 08:00–20:00 cả tuần.</p><a class="go" href="https://violet110901-lang.github.io/viettel-le-van-luong-landing/" target="_blank" rel="noopener">Xem cửa hàng <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+        <article class="ev"><div class="th"><img src="assets/prod-samsung.jpg" alt="Trải nghiệm 5G" loading="lazy"></div><div class="bd"><h4>Tuần lễ trải nghiệm Viettel 5G tại các trung tâm thương mại</h4><p>Đo tốc độ thực tế, trải nghiệm cloud gaming và nhận SIM 5G trải nghiệm miễn phí.</p><a class="go" href="https://vietteltelecom.vn/vx/5g/" target="_blank" rel="noopener">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
+        <article class="ev"><div class="th"><img src="assets/ban-money.jpg" alt="Viettel Money" loading="lazy"></div><div class="bd"><h4>Hội thảo giải pháp số cho doanh nghiệp SME Hà Nội</h4><p>Giới thiệu ViettelCA, SInvoice, vBHXH và lộ trình chuyển đổi số cho hộ kinh doanh.</p><a class="go" href="#sme">Xem chi tiết <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></article>
       </div>
     </div>
   </div>
@@ -738,7 +792,7 @@
     <div class="reveal">
       <h2>Hỗ trợ khách hàng</h2>
       <p>Vui lòng liên hệ chăm sóc khách hàng Viettel Hà Nội để được tư vấn miễn phí về gói cước, Internet và dịch vụ doanh nghiệp.</p>
-      <a class="sup-tel" href="tel:02463251080"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>02463251080</a>
+      <a class="sup-tel" href="tel:02463251080"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0246 325 1080</a>
       <div class="sup-acts">
         <a class="btn btn-white" href="#stores">Tìm cửa hàng gần bạn</a>
         <a class="btn btn-outline-w" href="https://www.facebook.com/messages/t/Vietteltelecom" target="_blank" rel="noopener">Chat với CSKH</a>
@@ -752,13 +806,13 @@
 <section class="sec" id="faq">
   <div class="wrap">
     <div class="vhead reveal" style="justify-content:center">
-      <h2 style="margin:0 auto">Câu hỏi thường gặp</h2>
+      <img class="vh-tam" src="assets/tammi/think.png" alt="Tammi" loading="lazy"><h2>Câu hỏi thường gặp</h2>
     </div>
     <div class="faq reveal">
-      <details open><summary>Cửa hàng Viettel tại Hà Nội mở cửa khung giờ nào?</summary><p>Phần lớn cửa hàng trực tiếp tại Hà Nội mở 08:00 – 20:00 tất cả các ngày trong tuần, kể cả thứ Bảy và Chủ Nhật. Một số điểm giao dịch trong trung tâm thương mại mở theo giờ của toà nhà. Gọi 02463251080 để xác nhận trước khi tới.</p></details>
-      <details><summary>Tôi muốn lắp Internet tại Hà Nội thì đăng ký ở đâu?</summary><p>Bạn có thể đăng ký trực tiếp tại bất kỳ cửa hàng Viettel nào trong danh sách phía trên, hoặc gọi 02463251080 để kỹ thuật khảo sát tại nhà. Khu vực nội thành Hà Nội thường lắp đặt trong 24 giờ kể từ khi khảo sát.</p></details>
+      <details open><summary>Cửa hàng Viettel tại Hà Nội mở cửa khung giờ nào?</summary><p>Phần lớn cửa hàng trực tiếp tại Hà Nội mở 08:00 – 20:00 tất cả các ngày trong tuần, kể cả thứ Bảy và Chủ Nhật. Một số điểm giao dịch trong trung tâm thương mại mở theo giờ của toà nhà. Gọi 0246 325 1080 để xác nhận trước khi tới.</p></details>
+      <details><summary>Tôi muốn lắp Internet tại Hà Nội thì đăng ký ở đâu?</summary><p>Bạn có thể đăng ký trực tiếp tại bất kỳ cửa hàng Viettel nào trong danh sách phía trên, hoặc gọi 0246 325 1080 để kỹ thuật khảo sát tại nhà. Khu vực nội thành Hà Nội thường lắp đặt trong 24 giờ kể từ khi khảo sát.</p></details>
       <details><summary>Đổi SIM 4G/5G và eSIM cần mang giấy tờ gì?</summary><p>Cần CCCD gắn chip bản gốc của chính chủ thuê bao và SIM cũ. Nếu không phải chính chủ, cần thêm giấy uỷ quyền có xác nhận và CCCD của cả hai bên. Nhớ sao lưu danh bạ vì dữ liệu trên SIM cũ không chuyển sang SIM mới.</p></details>
-      <details><summary>Chi nhánh Viettel Hà Nội có hỗ trợ khách hàng doanh nghiệp không?</summary><p>Có. Chi nhánh triển khai đầy đủ giải pháp cho doanh nghiệp: ViettelCA, SInvoice, vBHXH, Internet chuyên kênh, tổng đài Cloud và các giải pháp IoT. Liên hệ 02463251080 để được cử chuyên viên tư vấn tại doanh nghiệp.</p></details>
+      <details><summary>Chi nhánh Viettel Hà Nội có hỗ trợ khách hàng doanh nghiệp không?</summary><p>Có. Chi nhánh triển khai đầy đủ giải pháp cho doanh nghiệp: ViettelCA, SInvoice, vBHXH, Internet chuyên kênh, tổng đài Cloud và các giải pháp IoT. Liên hệ 0246 325 1080 để được cử chuyên viên tư vấn tại doanh nghiệp.</p></details>
       <details><summary>Thanh toán cước tại cửa hàng bằng hình thức nào?</summary><p>Tiền mặt, thẻ nội địa và quốc tế, Viettel Money và chuyển khoản qua mã QR. Bạn cũng có thể thanh toán online qua My Viettel mà không cần tới cửa hàng.</p></details>
     </div>
   </div>
@@ -771,7 +825,8 @@
       <img class="vt-intro-logo" src="assets/viettel-logo.png" alt="Viettel Telecom">
       <div>
         <p class="vt-intro-title">Website mua sắm online chính thức của Viettel Telecom.</p>
-        <p class="vt-intro-desc">Cơ quan chủ quản: Tổng Công ty Viễn thông Viettel (Viettel Telecom) - Chi nhánh Tập đoàn Công nghiệp - Viễn thông Quân đội. Chi nhánh Viettel Hà Nội — Tòa nhà The Light, Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội. Điện thoại: 02463251080.</p>
+        <p class="vt-intro-desc">Cơ quan chủ quản: Tổng Công ty Viễn thông Viettel (Viettel Telecom) - Chi nhánh Tập đoàn Công nghiệp - Viễn thông Quân đội.</p>
+        <p class="vt-intro-desc">Chi nhánh Viettel Hà Nội — Tòa nhà The Light, Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội. Hotline: 0246 325 1080.</p>
       </div>
     </div>
     <div class="vt-foot-cols">
@@ -796,6 +851,25 @@
   <a href="#internet"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19" r="1.4" fill="currentColor" stroke="none"/></svg></span><span>Lắp mạng internet</span></a>
   <a href="#mobile"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg></span><span>Dịch vụ di động</span></a>
   <a href="tel:02463251080"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span><span>Hotline bán hàng</span></a>
+</div>
+
+<!-- ============ TAMMI nổi ============ -->
+<div class="tammi-fab">
+  <div class="say">Chưa biết đi cửa hàng nào? <b>Hỏi Tammi</b></div>
+  <button class="btn-t" onclick="toggleTammi()" aria-label="Mở trợ lý Tammi"><img src="assets/tammi/idea.png" alt="Tammi"><span class="dot"></span></button>
+</div>
+<div class="tammi-panel" id="tammiPanel">
+  <div class="tp-head"><img class="ava" src="assets/tammi/ok.png" alt="Tammi"><div><h4>Tammi</h4><small><i></i>Trợ lý Viettel Hà Nội</small></div><button class="x" onclick="toggleTammi()" aria-label="Đóng">×</button></div>
+  <div class="tp-body">
+    <div class="tp-msg" id="tammiMsg">Chào bạn 👋 Mình là Tammi. Bạn cần tìm cửa hàng hay muốn làm dịch vụ online?</div>
+    <div class="tp-quick">
+      <button onclick="tammiGo('#stores','Bạn chọn quận/huyện ở ô Tìm kiếm vị trí cửa hàng nhé — mình lọc ngay các cửa hàng trong quận đó và chỉ đường luôn.')">📍 Cửa hàng nào gần tôi?</button>
+      <button onclick="tammiSay('Phần lớn cửa hàng Viettel ở Hà Nội mở <b>08:00 – 20:00</b> tất cả các ngày, kể cả T7 &amp; CN. Gọi 0246 325 1080 để chắc chắn trước khi đi nhé.')">🕒 Cửa hàng mở mấy giờ?</button>
+      <button onclick="tammiGo('#mobile','Đăng ký gói cước, đổi eSIM 5G hay chuyển mạng giữ số đều làm online được — mình kéo bạn tới khu Dịch vụ di động nhé.')">📶 Làm gì được mà khỏi tới quầy?</button>
+      <button onclick="tammiGo('#internet','Lắp Internet hoặc TV360 bạn đăng ký online, kỹ thuật sẽ hẹn khảo sát tận nhà. Nội thành Hà Nội thường lắp trong 24 giờ.')">🛜 Muốn lắp Internet tại nhà</button>
+      <button onclick="tammiSay('Đổi SIM 4G/5G hoặc eSIM cần <b>CCCD gắn chip bản gốc</b> của chính chủ và SIM cũ. Nhớ sao lưu danh bạ trước nhé, xử lý khoảng 10–15 phút.')">🪪 Đổi SIM cần mang gì?</button>
+    </div>
+  </div>
 </div>
 
 <!-- ============ Thanh nút mobile ============ -->
@@ -841,7 +915,7 @@ function renderStores(list){
   var box = document.getElementById('rsList');
   document.getElementById('rsCount').textContent = list.length;
   if(!list.length){
-    box.innerHTML = '<div class="near-empty">Chưa có dữ liệu cửa hàng cho khu vực này. Vui lòng gọi <b>02463251080</b> để được hướng dẫn điểm giao dịch gần nhất.</div>';
+    box.innerHTML = '<div class="near-empty">Chưa có dữ liệu cửa hàng cho khu vực này. Vui lòng gọi <b>0246 325 1080</b> để được hướng dẫn điểm giao dịch gần nhất.</div>';
     return;
   }
   box.innerHTML = list.map(function(s,i){
@@ -901,6 +975,15 @@ document.querySelectorAll('.pk-dots').forEach(function(g){
     b.classList.add('on');
   });
 });
+
+/* ===== Tammi ===== */
+function toggleTammi(){ document.getElementById('tammiPanel').classList.toggle('open'); }
+function tammiSay(html){ document.getElementById('tammiMsg').innerHTML = html; }
+function tammiGo(hash, html){
+  tammiSay(html);
+  var el = document.querySelector(hash);
+  if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+}
 
 /* ===== menu mobile ===== */
 function toggleMenu(){ document.getElementById('vtMenuMb').classList.toggle('open'); }
