@@ -117,12 +117,16 @@
   .btxt-short{display:none}
   .pv-hero .h-kick{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);padding:5px 14px;border-radius:999px;margin-bottom:16px}
   /* khối ảnh hero + Tammi nhỏ ở góc */
-  .pv-collage{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end}
-  .pv-collage figure{border-radius:26px;overflow:hidden;border:4px solid rgba(255,255,255,.22);box-shadow:0 26px 60px rgba(60,0,12,.38);background:rgba(255,255,255,.1)}
+  .pv-collage{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .pv-collage figure{border-radius:22px;overflow:hidden;border:4px solid rgba(255,255,255,.22);box-shadow:0 26px 60px rgba(60,0,12,.38);background:rgba(255,255,255,.1)}
   .pv-collage figure img{width:100%;height:100%;object-fit:cover;display:block}
-  .pv-collage figure:nth-child(1){aspect-ratio:3/4.4;transform:translateY(-14px)}
-  .pv-collage figure:nth-child(2){aspect-ratio:3/5.2}
-  .pv-collage figure:nth-child(3){aspect-ratio:3/4.4;transform:translateY(-26px)}
+  /* mặt tiền: biển hiệu trải ngang nên cần khung ngang, giữ mép trên */
+  .pv-collage .c-wide{grid-column:1/-1;aspect-ratio:21/9}
+  .pv-collage .c-wide img{object-position:center top}
+  /* hai ảnh nội thất gần đúng tỉ lệ gốc 4:3 nên hầu như không bị cắt */
+  .pv-collage .c-a,.pv-collage .c-b{aspect-ratio:4/3}
+  .pv-collage .c-a img{object-position:center 45%}
+  .pv-collage .c-b img{object-position:center 65%}
   .pv-collage .tam-mini{position:absolute;left:-30px;bottom:-26px;width:132px;height:auto;filter:drop-shadow(0 14px 22px rgba(60,0,12,.45));animation:tFloat 3.6s ease-in-out infinite;pointer-events:none;z-index:2}
   .pv-hero h1{text-wrap:balance}
   .pv-hero h1 em{font-style:normal;color:#ffe08a;white-space:nowrap}
@@ -382,7 +386,7 @@
     .vt-menu-mb a{padding:14px 6px;font-size:15px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line)}
     .vt-menu-mb a:last-child{border-bottom:none}
     .pv-hero-grid{grid-template-columns:1fr;gap:26px}
-    .pv-collage{max-width:520px}
+    .pv-collage{max-width:560px}
     .pv-collage .tam-mini{width:112px;left:-18px;bottom:-20px}
     .news-grid,.sup-grid,.pv-loc{grid-template-columns:1fr}
     .pv-loc .map-box{border-right:0;border-bottom:1px solid var(--line)}
@@ -407,8 +411,8 @@
     .pv-hero{padding-top:18px;padding-bottom:80px}
     .pv-hero h1{font-size:27px}
     .pv-collage{gap:9px}
-    .pv-collage figure{border-radius:18px;border-width:3px}
-    .pv-collage figure:nth-child(1),.pv-collage figure:nth-child(3){transform:none}
+    .pv-collage figure{border-radius:16px;border-width:3px}
+    .pv-collage .c-wide{aspect-ratio:16/9}
     .pv-collage .tam-mini{width:78px;left:-8px;bottom:-14px}
     .pv-hero .h-cta{flex-wrap:nowrap;gap:9px}
     .pv-hero .h-cta .btn{flex:1;min-width:0;padding:12px 6px;font-size:13.5px;gap:6px}
@@ -508,9 +512,9 @@
       </div>
     </div>
     <div class="pv-collage">
-      <figure><img src="assets/store-1.png" alt="Quầy giao dịch Viettel Hà Nội" loading="lazy"></figure>
-      <figure><img src="assets/store-2.png" alt="Mặt tiền chi nhánh Viettel Hà Nội" loading="lazy"></figure>
-      <figure><img src="assets/store-3.png" alt="Khu chờ phục vụ khách hàng" loading="lazy"></figure>
+      <figure class="c-wide"><img src="assets/store-2.png" alt="Mặt tiền chi nhánh Viettel Hà Nội" loading="lazy"></figure>
+      <figure class="c-a"><img src="assets/store-1.png" alt="Quầy giao dịch Viettel Hà Nội" loading="lazy"></figure>
+      <figure class="c-b"><img src="assets/store-3.png" alt="Khu chờ phục vụ khách hàng" loading="lazy"></figure>
       <img class="tam-mini" src="assets/tammi/hero.png" alt="Tammi — trợ lý Viettel Hà Nội">
     </div>
   </div>
